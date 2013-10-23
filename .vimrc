@@ -1,5 +1,5 @@
 execute pathogen#infect()
-
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 syntax on
 filetype plugin indent on
 colorscheme solarized
