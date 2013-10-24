@@ -21,3 +21,6 @@ set shiftwidth=4
 
 " size of a hard tabstop
 set tabstop=4
+
+" Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
+set noswapfile
