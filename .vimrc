@@ -48,3 +48,6 @@ set wildignore+=*.sw? " Vim swap files
 set wildignore+=*.log,*.bu " log files 
 set wildignore+=*/logs/* " log folder
 set wildignore+=*/node_modules/* " ignoring node modules
+
+" Complete options (disable preview scratch window, longest removed to aways show menu)
+set completeopt=menu,menuone
