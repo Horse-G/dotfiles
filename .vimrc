@@ -48,3 +48,4 @@ set wildignore+=*.sw? " Vim swap files
 set wildignore+=*.log,*.bu " log files 
 set wildignore+=*/logs/* " log folder
 set wildignore+=*/node_modules/* " ignoring node modules
+set wildignore+=*/bower_components/* " ignore bower modules
