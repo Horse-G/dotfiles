@@ -25,6 +25,9 @@ set hlsearch
 set visualbell
 set mouse=a
 
+" so, for some reason, backspace stopped working...well this fixes it
+set backspace=indent,eol,start
+
 " highlight current line
 set cursorline
 
