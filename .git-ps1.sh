@@ -23,6 +23,8 @@ function git_color {
 		#echo -e $GREENBOLD
 	if [[ $git_status =~ "not staged for commit" ]]; then
 		echo -e $YELLOWBOLD
+	else if [[ $git_status =~ "Changed but not updated" ]]; then
+		echo -e $YELLOWBOLD
 	else if [[ $git_status =~ "Changes to be committed" ]]; then
 		echo -e $YELLOWBOLD
 	else if [[ $git_status =~ "Untracked files" ]]; then
@@ -33,7 +35,7 @@ function git_color {
 		echo -e $GREENBOLD
 	else
 		echo -e $RESET
-	fi fi fi fi fi
+	fi fi fi fi fi fi
 }
 
 export PS1="[${PINKBOLD}\u${RESET}@${RESET}\h ${BLUE}\w]"
