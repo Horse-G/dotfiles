@@ -13,6 +13,9 @@ let g:molokai_original = 1
 " 256 dark version
 let g:rehash256 = 1
 
+" airline molokai theme
+let g:airline_theme='wombat'
+
 " enabling the scheme
 set background=dark
 
@@ -31,11 +34,17 @@ set backspace=indent,eol,start
 " highlight current line
 set cursorline
 
+" spaces instead of tabs
+set expandtab
+
 " size of an 'indent'
-set shiftwidth=4
+set shiftwidth=2
+
+" softtabstop for spaces as tabs
+set softtabstop=2
 
 " size of a hard tabstop
-set tabstop=4
+" set tabstop=2
 
 " Uncomment below to disable 'swap files' (eg. .myfile.txt.swp) from being created
 set noswapfile
@@ -55,4 +64,10 @@ set wildignore+=*/bower_components/* " ignore bower modules
 
 " Complete options (disable preview scratch window, longest removed to aways show menu)
 set completeopt=menu,menuone
+
+" Mustache syntax
+let g:mustache_abbreviations = 1
+
+" Airline powerline fonts
+let g:airline_powerline_fonts = 1
 
