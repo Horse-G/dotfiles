@@ -11,3 +11,6 @@ source ~/dotfiles/.git-completion.sh
 # and more colors for the terminal, maybe move to .git-ps1.sh
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+#rbenv -- needed
+eval "$(rbenv init -)"
