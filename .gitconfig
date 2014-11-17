@@ -1,0 +1,2 @@
+[alias]
+  ll = log --oneline --format=format:'%C(auto)%h - %s %C(dim)by %C(magenta)%cn, %C(cyan)%cr%C(reset)'

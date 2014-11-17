@@ -1,2 +1,3 @@
 --ignore-dir=build/
 --type-add=hbs=.hbs
+--type-add=scss=.scss
