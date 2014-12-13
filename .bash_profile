@@ -11,3 +11,9 @@ source ~/dotfiles/.git-completion.sh
 # and more colors for the terminal, maybe move to .git-ps1.sh
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+#rbenv -- needed
+eval "$(rbenv init -)"
+
+#title for the bash window/tab
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
