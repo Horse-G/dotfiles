@@ -61,7 +61,10 @@ set wildignore+=*.log,*.bu " log files
 set wildignore+=*/logs/* " log folder
 set wildignore+=*/node_modules/* " ignoring node modules
 set wildignore+=*/bower_components/* " ignore bower modules
-set wildignore+=tmp/ " ignoring tmp files for ctrlp
+set wildignore+=*/tmp/* " ignoring tmp files for ctrlp
+set wildignore+=dist/* " ignoring dist files
+set wildignore+=build/* " build folder
+set wildignore+=express/public/* " compiled stuff...no need to search there
 
 " Complete options (disable preview scratch window, longest removed to aways show menu)
 set completeopt=menu,menuone
@@ -71,4 +74,8 @@ let g:mustache_abbreviations = 1
 
 " Airline powerline fonts
 let g:airline_powerline_fonts = 1
+
+" if there are a lot of files ctrlp stops working...it will take a while to
+" scan but its worth it 
+let g:ctrlp_max_files = 0
 
