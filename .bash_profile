@@ -7,6 +7,7 @@ source ~/dotfiles/.git-ps1.sh
 # git autocomplete scripts. 
 source ~/dotfiles/.git-prompt.sh
 source ~/dotfiles/.git-completion.sh
+source ~/dotfiles/.git-flow-completion.sh
 
 # and more colors for the terminal, maybe move to .git-ps1.sh
 export CLICOLOR=1
