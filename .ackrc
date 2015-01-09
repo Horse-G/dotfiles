@@ -2,6 +2,7 @@
 --ignore-dir=bower_components
 --ignore-dir=node_modules
 --ignore-dir=tmp
+--ignore-dir=express/public
 --ignore-dir=dist
 --type-add=hbs=.hbs
 --type-add=scss=.scss
