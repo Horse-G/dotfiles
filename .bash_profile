@@ -1,6 +1,8 @@
 #lets use the latest vim. install macvim, then alias it
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
+alias curl-stats=./scripts/curl-stats.sh
+
 # colors for terminal
 source ~/dotfiles/.git-ps1.sh
 
