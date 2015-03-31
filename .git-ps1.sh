@@ -30,7 +30,7 @@ function git_color {
 	else if [[ $git_status =~ "Untracked files" ]]; then
 		echo -e $REDBOLD
 	else if [[ $git_status =~ "Your branch is ahead of" ]]; then
-		echo -e $PURPLEBOLD
+		echo -e $PINK
 	else if [[ $git_status =~ "nothing to commit" ]]; then
 		echo -e $GREENBOLD
 	else
