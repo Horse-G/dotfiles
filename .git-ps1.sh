@@ -22,15 +22,15 @@ function git_color {
 	#if [[ ! $git_status =~ "working directory clean" ]]; then
 		#echo -e $GREENBOLD
 	if [[ $git_status =~ "not staged for commit" ]]; then
-		echo -e $YELLOWBOLD
+		echo -e $REDBOLD
 	else if [[ $git_status =~ "Changed but not updated" ]]; then
-		echo -e $YELLOWBOLD
+		echo -e $REDBOLD
 	else if [[ $git_status =~ "Changes to be committed" ]]; then
-		echo -e $YELLOWBOLD
+		echo -e $REDBOLD
 	else if [[ $git_status =~ "Untracked files" ]]; then
-		echo -e $YELLOWBOLD
+		echo -e $REDBOLD
 	else if [[ $git_status =~ "Your branch is ahead of" ]]; then
-		echo -e $PURPLEBOLD
+		echo -e $PINK
 	else if [[ $git_status =~ "nothing to commit" ]]; then
 		echo -e $GREENBOLD
 	else
@@ -38,7 +38,7 @@ function git_color {
 	fi fi fi fi fi fi
 }
 
-export PS1="[${PINKBOLD}\u${RESET}@${RESET}\h ${BLUE}\w]"
+export PS1="[${YELLOWBOLD}\u${RESET}@${RESET}\h ${PURPLEBOLD}\w${RESET}]"
 export PS1="$PS1\[\$(git_color)\]"
 export PS1="$PS1\[\$(__git_ps1 ' (%s)')\]${RESET}\$ "
 

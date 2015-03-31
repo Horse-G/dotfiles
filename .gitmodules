@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/vim-vinegar"]
 	path = .vim/bundle/vim-vinegar
 	url = git://github.com/tpope/vim-vinegar.git
+[submodule "iterm2/iTerm2-Color-Schemes"]
+	path = iterm2/iTerm2-Color-Schemes
+	url = git://github.com/mbadolato/iTerm2-Color-Schemes.git
