@@ -13,6 +13,10 @@ alias curl-stats=./scripts/curl-stats.sh
 alias start-postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stop-postgres='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
+alias purge-cache=./scripts/purge-cache.sh
+
+alias simple-server='python -m SimpleHTTPServer'
+
 # colors for terminal
 source ~/dotfiles/.git-ps1.sh
 
