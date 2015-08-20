@@ -8,12 +8,12 @@ export NVM_DIR="/Users/gmedina/.nvm"
 #lets use the latest vim. install macvim, then alias it
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
-alias curl-stats=./scripts/curl-stats.sh
+alias curl-stats=~/dotfiles/scripts/curl-stats.sh
 
 alias start-postgres='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stop-postgres='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-alias purge-cache=./scripts/purge-cache.sh
+alias purge-cache=~/dotfiles/scripts/purge-cache.sh
 
 alias simple-server='python -m SimpleHTTPServer'
 
