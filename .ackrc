@@ -4,5 +4,7 @@
 --ignore-dir=tmp
 --ignore-dir=express/public
 --ignore-dir=dist
+--ignore-dir=dist/assets
+--ignore-dir=vendor
 --type-add=hbs=.hbs
 --type-add=scss=.scss
