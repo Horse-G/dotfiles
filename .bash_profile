@@ -1,3 +1,6 @@
+export NVM_DIR="/Users/gmedina/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 #lets use the latest vim. install macvim, then alias it
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
