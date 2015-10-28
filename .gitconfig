@@ -1,2 +1,8 @@
 [alias]
   ll = log --oneline --format=format:'%C(auto)%h - %s %C(dim)by %C(magenta)%cn, %C(cyan)%cr%C(reset)'
+  co = checkout
+  d = diff
+  go = log --graph --pretty=oneline --abbrev-commit
+  st = status
+  pullsrb = !git stash save && git pull --rebase && git stash pop && echo 'Success!'
+  ci = commit
