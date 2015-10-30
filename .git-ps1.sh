@@ -38,7 +38,7 @@ function git_color {
 	fi fi fi fi fi fi
 }
 
-export PS1="[${YELLOWBOLD}\u${RESET}@${RESET}\h ${PURPLEBOLD}\w${RESET}]"
+export PS1="[${YELLOWBOLD}\u${RESET}@${RESET}$(scutil --get ComputerName) ${PURPLEBOLD}\w${RESET}]"
 export PS1="$PS1\[\$(git_color)\]"
 export PS1="$PS1\[\$(__git_ps1 ' (%s)')\]${RESET}\$ "
 
