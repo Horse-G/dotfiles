@@ -34,3 +34,7 @@ eval "$(rbenv init -)"
 
 #title for the bash window/tab
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+
+# http://stackoverflow.com/questions/10158508/lose-vim-colorscheme-in-tmux-mode
+alias tmux='TERM=screen-256color-bce tmux'
+
