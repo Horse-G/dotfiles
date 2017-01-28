@@ -79,3 +79,7 @@ let g:airline_powerline_fonts = 1
 " scan but its worth it 
 let g:ctrlp_max_files = 0
 
+" defaults ctrlp to always search in the current directory
+" see https://github.com/kien/ctrlp.vim/issues/150
+let ctrlp_working_path_mode = 0
+

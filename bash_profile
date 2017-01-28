@@ -2,8 +2,8 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export NVM_DIR="/Users/gmedina/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 #lets use the latest vim. install macvim, then alias it
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
@@ -34,3 +34,7 @@ eval "$(rbenv init -)"
 
 #title for the bash window/tab
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+
+# http://stackoverflow.com/questions/10158508/lose-vim-colorscheme-in-tmux-mode
+alias tmux='TERM=screen-256color-bce tmux'
+
