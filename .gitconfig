@@ -6,3 +6,21 @@
   st = status
   pullsrb = !git stash save && git pull --rebase && git stash pop && echo 'Success!'
   ci = commit
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+
+[color "status"]
+  added = green
+  changed = red bold
+  untracked = magenta bold
+
+[color "branch"]
+  remote = yellow bold
+  current = yellow
+  local = green

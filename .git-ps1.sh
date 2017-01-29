@@ -19,8 +19,6 @@ WHITEBOLD="\033[37;1m"
 function git_color {
 	local git_status="$(git status 2> /dev/null)"
 
-	#if [[ ! $git_status =~ "working directory clean" ]]; then
-		#echo -e $GREENBOLD
 	if [[ $git_status =~ "not staged for commit" ]]; then
 		echo -e $REDBOLD
 	else if [[ $git_status =~ "Changed but not updated" ]]; then
@@ -38,8 +36,6 @@ function git_color {
 	fi fi fi fi fi fi
 }
 
-export PS1="[${YELLOWBOLD}\u${RESET}@${RESET}$(scutil --get ComputerName) ${PURPLEBOLD}\w${RESET}]"
+export PS1="[\[$YELLOWBOLD\]\u\[$RESET\]@\[$RESET\]\$(scutil --get ComputerName) \[$PURPLEBOLD\]\w\[$RESET\]]"
 export PS1="$PS1\[\$(git_color)\]"
-export PS1="$PS1\[\$(__git_ps1 ' (%s)')\]${RESET}\$ "
-
-# export PS1='[\e[35m\u\]\e[0m@\]\e[0m\h\] \e[36m\w\]]\e[32;1m$(__git_ps1 " (%s)")\]\e[0m\$ '   
+export PS1="$PS1\$(__git_ps1 ' (%s)')\[$RESET\]\$ "
