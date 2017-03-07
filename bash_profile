@@ -2,6 +2,9 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+# OSX Sierra ssh woes http://apple.stackexchange.com/questions/254468/macos-sierra-doesn-t-seem-to-remember-ssh-keys-between-reboots
+ssh-add -A 2>/dev/null;
+
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
