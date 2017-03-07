@@ -20,6 +20,9 @@ alias purge-cache=~/dotfiles/scripts/purge-cache.sh
 
 alias simple-server='python -m SimpleHTTPServer'
 
+# this assumes that ive cloned tmux, and compiled it. see https://deductivelabs.com/en/2016/03/using-true-color-vim-tmux/
+alias tmux-tc='~/source/tmux/tmux'
+
 # colors for terminal
 source ~/dotfiles/.git-ps1.sh
 
