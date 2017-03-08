@@ -1,26 +1,30 @@
 execute pathogen#infect()
 
-" if (has("termguicolors"))
-  " set termguicolors
-" endif
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 syntax on
 
 filetype plugin indent on
 
 " colorscheme - currently using molokai @ https://github.com/tomasr/molokai 
-colorscheme molokai
-" colorscheme onedark
+" colorscheme molokai
+colorscheme onedark
 
 " choosing monokai original
-let g:molokai_original = 1
+" let g:molokai_original = 1
 
 " 256 dark version
-let g:rehash256 = 1
+" let g:rehash256 = 1
 
 " airline molokai theme
-let g:airline_theme='wombat'
-" let g:airline_theme='onedark'
+" let g:airline_theme='wombat'
+let g:airline_theme='onedark'
 
 " enabling the scheme
 set background=dark
