@@ -1,20 +1,26 @@
 execute pathogen#infect()
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 syntax on
 
 filetype plugin indent on
 
 " colorscheme - currently using molokai @ https://github.com/tomasr/molokai 
-colorscheme molokai
+" colorscheme molokai
+colorscheme onedark
 
 " choosing monokai original
-let g:molokai_original = 1
+" let g:molokai_original = 1
 
 " 256 dark version
-let g:rehash256 = 1
+" let g:rehash256 = 1
 
 " airline molokai theme
-let g:airline_theme='wombat'
+" let g:airline_theme='wombat'
+let g:airline_theme='onedark'
 
 " enabling the scheme
 set background=dark
