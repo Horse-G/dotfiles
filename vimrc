@@ -1,5 +1,8 @@
 execute pathogen#infect()
 
+" Installing ctrlp http://ctrlpvim.github.io/ctrlp.vim/#installation
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 if (has("termguicolors"))
   set termguicolors
 endif
