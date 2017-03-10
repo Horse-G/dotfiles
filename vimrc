@@ -15,6 +15,9 @@ syntax on
 
 filetype plugin indent on
 
+" enabling the scheme
+set background=dark
+
 " colorscheme - currently using molokai @ https://github.com/tomasr/molokai 
 " colorscheme molokai
 colorscheme onedark
@@ -28,9 +31,6 @@ colorscheme onedark
 " airline molokai theme
 " let g:airline_theme='wombat'
 let g:airline_theme='onedark'
-
-" enabling the scheme
-set background=dark
 
 " shows the line number
 set number
