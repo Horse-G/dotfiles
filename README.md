@@ -12,3 +12,8 @@ https://deductivelabs.com/en/2016/03/using-true-color-vim-tmux/
 OneDark VIM theme:
 https://github.com/joshdick/onedark.vim
 
+Create a symbolic link from the `vim-plug` submodule `plug.vim`
+
+```
+ln -s ~/dotfiles/vim-plug/plug.vim ~/dotfiles/.vim/autload/plug.vim
+```

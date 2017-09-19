@@ -1,4 +1,36 @@
-execute pathogen#infect()
+" execute pathogen#infect()
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'git@github.com:mileszs/ack.vim.git'
+
+Plug 'git@github.com:kien/ctrlp.vim.git'
+
+Plug 'git@github.com:tomasr/molokai.git'
+
+Plug 'git@github.com:vim-airline/vim-airline.git'
+
+Plug 'git@github.com:tpope/vim-fugitive.git'
+
+Plug 'git@github.com:jelera/vim-javascript-syntax.git'
+
+Plug 'git@github.com:mustache/vim-mustache-handlebars.git'
+
+Plug 'git://github.com/tpope/vim-vinegar.git'
+
+Plug 'git@github.com:kchmck/vim-coffee-script.git'
+
+Plug 'git@github.com:joshdick/onedark.vim.git'
+
+Plug 'git@github.com:sheerun/vim-polyglot.git'
+
+Plug 'git@github.com:vim-airline/vim-airline-themes.git'
+
+Plug 'git@github.com:rakr/vim-one.git'
+
+Plug 'git@github.com:altercation/vim-colors-solarized.git'
+
+call plug#end()
 
 " Installing ctrlp http://ctrlpvim.github.io/ctrlp.vim/#installation
 set runtimepath^=~/.vim/bundle/ctrlp.vim

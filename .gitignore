@@ -2,3 +2,5 @@
 vpn*
 .vscode/
 .idea/
+.vim/plugged
+.vim/autoload
